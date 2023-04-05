@@ -1,8 +1,11 @@
 import './App.module.scss';
+import NavBar from "./components/NavBar"
 
 const App = () => {
   return (
-    <h1>Works</h1>
+    <>
+      <NavBar />
+    </>
   );
 }
 

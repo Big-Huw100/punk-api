@@ -1,0 +1,22 @@
+.NavBar {
+    border: black solid 5px;
+    width: 20vw;
+    height: 100vh;
+
+    h1 {
+        color: lightblue;
+        border: solid lightblue 5px;
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+    .toggleSection {
+        padding-top: 50px;
+
+        h2 {
+            color: palevioletred;
+            padding: 5px;
+            margin: 10px;
+        }
+    }
+}
