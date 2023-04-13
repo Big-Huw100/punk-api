@@ -6,11 +6,18 @@ import styles from "./App.module.scss";
 import beers from './data/beers';
 
 const App = () => {
+
+  const getBeerCard = (beer) => (
+    <BeerCard key={beer.id} beer={beer} />
+  );
+
   return (
     <>
     <main className={styles.App}>
       <NavBar />
-      <BeerCard beer={beers[0]}/>
+      <section className={styles.content}>
+      {beers.map(getBeerCard)}
+      </section>
     </main>
     </>
   );
