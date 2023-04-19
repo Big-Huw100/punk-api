@@ -1,0 +1,20 @@
+.searchBar {
+    input {
+    color: lightblue;
+    border: solid lightblue 5px;
+    margin: 10px;
+    padding: 0 10px;
+    height: 40px;
+    width: 240px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder{
+        color: lightblue;
+    }
+
+    }
+    
+}

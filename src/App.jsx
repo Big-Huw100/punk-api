@@ -1,9 +1,8 @@
-import './App.module.scss';
+import React, { useState } from 'react';
 import BeerCard from './components/BeerCard';
 import NavBar from "./components/NavBar";
 import styles from "./App.module.scss";
-
-import beers from './data/beers';
+import data from "../src/data/beers"
 
 const App = () => {
 
@@ -11,14 +10,20 @@ const App = () => {
     <BeerCard key={beer.id} beer={beer} />
   );
 
+  const [searchInput, setSearchInput] = useState("");
+
+  const filteredData = data.filter((item) =>
+    item.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
+
   return (
     <>
-    <main className={styles.App}>
-      <NavBar />
-      <section className={styles.content}>
-      {beers.map(getBeerCard)}
-      </section>
-    </main>
+      <main className={styles.App}>
+        <NavBar setSearchInput={setSearchInput} />
+        <section className={styles.content}>
+          {filteredData.map(getBeerCard)}
+        </section>
+      </main>
     </>
   );
 }

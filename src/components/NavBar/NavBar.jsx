@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from "./NavBar.module.scss"
+import SearchBar from '../SearchBar/SearchBar'
 
-function NavBar() {
+const NavBar = ({ setSearchInput }) => {
+
   return (
     <div className={styles.NavBar}>
-      <h1>Search...</h1>
+      <div className={styles.searchBar}>
+        <SearchBar setSearchInput={setSearchInput} />
+      </div>
       <div className={styles.toggleSection}>
         <h2>High ABV (6.0% or higher)</h2>
         <h2>Classic Range</h2>
@@ -14,4 +18,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar;
