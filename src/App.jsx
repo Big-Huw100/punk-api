@@ -57,7 +57,7 @@ const App = () => {
   const filteredData = beers.filter((beer) => {
     const nameMatches = beer.name.toLowerCase().includes(searchInput.toLowerCase());
     const abvMatches = !highAbv || beer.abv >= 6.0;
-    const ageMatches = !beerAge || beer.beerAge < 2011;
+    const ageMatches = !beerAge || beer.beerAge <= 2010;
     const acidityMatches = !acidity || beer.ph >= 4; 
     return nameMatches && abvMatches && ageMatches && acidityMatches;
   });
