@@ -13,7 +13,7 @@ const {
     <div className={styles.BeerCard}>
       <img src={image_url} alt="" />
       <h1>{name}</h1>
-      <p>{description.slice(0,100)}(...)</p>
+      <p>{description.slice(0,60)}(...)</p>
     </div>
   )
 }
