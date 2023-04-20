@@ -1,14 +1,24 @@
 .NavBar {
-    border: black solid 5px;
-    width: 20vw;
+  border: black solid 5px;
+  width: 20vw;
 
-    .toggleSection {
-        padding-top: 50px;
+  .toggleSection {
+    padding-top: 50px;
 
-        h2 {
-            color: palevioletred;
-            padding: 5px;
-            margin: 10px;
-        }
+    .checkboxLabel {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+
+      input {
+        margin-right: 10px;
+      }
+
+      h2 {
+        color: palevioletred;
+        padding: 5px;
+        margin: 0;
+      }
     }
+  }
 }

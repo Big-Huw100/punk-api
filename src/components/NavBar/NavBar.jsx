@@ -22,17 +22,17 @@ const NavBar = ({ setSearchInput, highAbv, setHighAbv, beerAge, setBeerAge, acid
         <SearchBar setSearchInput={setSearchInput} />
       </div>
       <div className={styles.toggleSection}>
-        <label>
+        <label className={styles.checkboxLabel}>
           <input type="checkbox" checked={highAbv} onChange={handleABVCheckboxChange} />
           <h2>High ABV (6.0% or higher)</h2>
         </label>
-        <label>
-        <input type="checkbox" checked={beerAge} onChange={handleBeerAgeCheckboxChange} />
-        <h2>Classic Range</h2>
+        <label className={styles.checkboxLabel}>
+          <input type="checkbox" checked={beerAge} onChange={handleBeerAgeCheckboxChange} />
+          <h2>Classic Range</h2>
         </label>
-        <label>
-        <input type="checkbox" checked={acidity} onChange={handleAcidityCheckboxChange} />
-        <h2>Acidic (ph 4 or higher)</h2>
+        <label className={styles.checkboxLabel}> 
+          <input type="checkbox" checked={acidity} onChange={handleAcidityCheckboxChange} />
+          <h2>Acidic (ph 4 or higher)</h2>
         </label>
       </div>
     </div>
