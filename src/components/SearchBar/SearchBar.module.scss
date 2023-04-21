@@ -1,7 +1,7 @@
 .searchBar {
     input {
-    color: lightblue;
-    border: solid lightblue 5px;
+    color: #00AEDB;
+    border: #FFFCE9 solid 3px;
     margin: 10px;
     padding: 0 10px;
     height: 40px;
@@ -12,7 +12,7 @@
     }
 
     &::placeholder{
-        color: lightblue;
+        color:#00AEDB;
     }
 
     }

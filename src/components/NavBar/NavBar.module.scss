@@ -1,9 +1,10 @@
 .NavBar {
-  border: black solid 5px;
-  width: 20vw;
+  width: 30vw;
+  padding: 20px;
+  background-color: #00AEDB;
 
   .toggleSection {
-    padding-top: 50px;
+    padding-top: 10px;
 
     .checkboxLabel {
       display: flex;
@@ -15,7 +16,8 @@
       }
 
       h2 {
-        color: palevioletred;
+        color: #231F20;
+        font-size: 22px;
         padding: 5px;
         margin: 0;
       }

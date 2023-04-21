@@ -6,14 +6,14 @@ const BeerCard = (props) => {
 const {
   image_url,
   name,
-  description,
+  tagline,
 } = props.beer
 
   return (
     <div className={styles.BeerCard}>
-      <img src={image_url} alt="" />
       <h1>{name}</h1>
-      <p>{description.slice(0,60)}(...)</p>
+      <img src={image_url} alt="" />
+      <p>{tagline}</p>
     </div>
   )
 }
