@@ -66,8 +66,11 @@ const App = () => {
     <>
       <main className={styles.App}>
         <NavBar setSearchInput={setSearchInput} setHighAbv={setHighAbv} highAbv={highAbv} beerAge={beerAge} setBeerAge={setBeerAge} acidity={acidity} setAcidity={setAcidity} />
-        <section className={styles.content}>
-        {filteredData.map(getBeerCard)}
+        <section>
+          <h1 className={styles.appTitle}>Punk IPA API</h1>
+          <section className={styles.content}>
+            {filteredData.map(getBeerCard)}
+          </section>
         </section>
       </main>
     </>
