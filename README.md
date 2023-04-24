@@ -1,3 +1,10 @@
+Goals for this Project
+• Built entirely in React
+• Use the Punk API (after using the data file first) (https://punkapi.com/)
+• Unit test where possible
+• Repository on GitHub
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
