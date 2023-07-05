@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import BeerCard from './components/BeerCard';
 import NavBar from "./components/NavBar";
 import styles from "./App.module.scss";
-// hello
 
 const App = () => {
 
